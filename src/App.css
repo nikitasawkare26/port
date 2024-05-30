@@ -1,38 +1,280 @@
-.App {
+/* src/App.css */
+
+header h1{
+  color: rgb(244, 244, 240);
+padding-left: 50px;
+}
+header {
+  background: #171717;
+  padding: 1rem;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header nav a:hover {
+  text-decoration: underline;
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+section h2 {
+  margin-top: 0;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+form label {
+  margin-bottom: 1rem;
+}
+
+form input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.5rem;
+  border: none;
+  background: #282c34;
   color: white;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+form button:hover {
+  background: #4c4c4c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* src/components/Header.css */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Home.css */
+
+/* src/components/Home.css */
+
+.home{
+  background-color: white;
+  padding: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+}
+
+.Avatar {
+  height: 300px;
+  width: 300px;
+
+}
+.title{
+margin: 0.5rem;
+}
+.title h1{
+    font-weight: 900;
+    margin: 0;
+    font-size: 2.1em;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.title h4{
+  text-align: center;
+  color: #4c4c4c;
+}
+.title h2{
+  text-align: center;
+  color: #4c4c4c;
+}
+.flex{
+text-align: center;
+padding-bottom: 100px;
+padding-top: 1rem;
+align-items: center;
+justify-content: center;
+
+}
+.about{
+  
+  background-color: white;
+  padding: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  justify-content: center;
+}
+
+.about h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.1em;
+}
+.about p {
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1em;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  display: inline-block;
+}
+.about-container{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/*projects */
+
+.project h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.1em;
+}
+.project{
+  
+  background-color: white;
+  padding: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  justify-content: center;
+}
+
+.contact-container3 {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.contact-card {
+  position: relative;
+  left: 300px;
+  width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: #ccc;
+}
+
+
+.contact-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.1em;
+  padding-top: 50px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.contact-form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form-group input[type="text"],
+.contact-form-group input[type="email"],
+.contact-form-group textarea {
+  
+  width: calc(100% - 22px); /* Adjusted for padding and border */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey; /* Initially transparent */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Transition effect on border color */
+}
+
+.contact-form-group input[type="text"]:hover,
+.contact-form-group input[type="email"]:hover,
+.contact-form-group textarea:hover {
+  border-color: #ccc; /* Change border color on hover */
+}
+
+.contact-form-group textarea {
+  height: 100px;
+}
+
+.contact-submit-btn {
+  position: relative;
+  left: 320px;
+  width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.contact-footer a {
+  color: #0077b5;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ddd;
 }
